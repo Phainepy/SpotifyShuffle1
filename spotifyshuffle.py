@@ -1,3 +1,6 @@
+#import
+from secretcreds import *
+
 #initial variables
 
 redirect_uri = "http://localhost:4202"
@@ -11,6 +14,7 @@ BASE_URL = 'https://api.spotify.com/v1/'
 SCOPE = "playlist-read-private playlist-modify-public playlist-modify-private user-library-modify"
 
 import requests
+import base64
 
 auth_code = requests.get (AUTH_URL,{
     'client_id' : CLIENT_ID,
